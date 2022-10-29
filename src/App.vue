@@ -1,30 +1,73 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/opportunities">Opportunities</router-link></li>
+      <li><router-link to="/volunteer">Volunteer</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+    </ul>
   </nav>
-  <router-view/>
+  <router-view />
+    <!-- <footer>
+    An Immigrant Family Services Institute (ISFI) service.
+    Information based on your location: {{ latitude }}°, {{ longitude }}°
+  </footer> -->
 </template>
 
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+export default defineComponent({
+  name: 'App',
+  setup(){
+  }
+});
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html, body, #app {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  position: relative;
+  background-color: lightgray;
 }
-
+div {
+padding-bottom: 2vh;
+}
 nav {
-  padding: 30px;
+  background-color: #eee;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2vw;
 }
-
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  margin: 0px 10px;
+}
 nav a {
+  text-decoration: none;
+  color: black;
+}
+.router-link-exact-active {
   font-weight: bold;
-  color: #2c3e50;
+  color: rgb(55, 125, 247);
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* it brock :(
+  footer{
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  color: rgb(55, 125, 247);
+  border-top: 2px solid black;
+  /* make the footer never go above the bottom of the page * /
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
 </style>
