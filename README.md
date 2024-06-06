@@ -1,4 +1,6 @@
-# hackathon
+# Boston Community Resources
+
+A website made for HackTheCastle which would help immigrants find local events and resources in their area, sorted by distance.
 
 ## Project setup
 ```
