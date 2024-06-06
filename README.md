@@ -1,6 +1,6 @@
 # Boston Community Resources
 
-A website made for HackTheCastle which would help immigrants find local events and resources in their area, sorted by distance.
+A website that allows volunteers to enter events, stores, organizations, and other bits of community information. Immigrants can use the site to explore the opportunities closest to them based on location data. 
 
 ## Project setup
 ```
